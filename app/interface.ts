@@ -6,3 +6,10 @@ export interface projectData{
     overview: string,
     githubLink: string
 }
+
+export interface skillData{
+    _id: string,
+    skill: string,
+    shadowStyle: string,
+    imageUrl: string
+}

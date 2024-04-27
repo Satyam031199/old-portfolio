@@ -15,7 +15,7 @@ async function getData() {
   return data;
 }
 export const dynamic = 'force-dynamic'
-export const revalidate = 60
+export const revalidate = 1
 const page = async () => {
   const data: projectData[] = await getData();
   return (
@@ -29,7 +29,7 @@ const page = async () => {
         {data.map((project) => (
           <article
             key={project._id}
-            className="overflow-hidden dark:border-zinc-600 rounded-lg border border-gray-100 bg-white shadow-lg dark:bg-black dark:shadow-gray-700 shadow-teal-100"
+            className="overflow-hidden dark:border-zinc-600 rounded-lg border border-gray-100 bg-white shadow-lg dark:bg-black dark:shadow-gray-700 shadow-teal-100 hover:scale-105 duration-500"
           >
             <div className="h-56 w-full relative">
               <Image
