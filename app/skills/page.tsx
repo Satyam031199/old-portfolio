@@ -3,7 +3,7 @@ import { skillData } from "../interface";
 import { client } from "../lib/sanity";
 
 async function getData() {
-  const query = `*[_type=='skills']{
+  const query = `*[_type=='skills'] | order(_updatedAt desc){
     _id,
       skill,
       shadowStyle,
