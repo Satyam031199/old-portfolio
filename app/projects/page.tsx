@@ -3,7 +3,7 @@ import { projectData } from "../interface";
 import { client } from "../lib/sanity";
 
 async function getData() {
-  const query = `*[_type=='project']{
+  const query = `*[_type=='project'] | order(_updatedAt desc){
         title,
           overview,
           link,
