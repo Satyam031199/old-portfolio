@@ -1,7 +1,7 @@
-## This project is deployed on 
+## This project is deployed on:
 
 https://allaboutsatyam.vercel.app/
 
-## Sanity Studio is deployed on 
+## Sanity Studio is deployed on: 
 
 https://allaboutsatyam.sanity.studio/
